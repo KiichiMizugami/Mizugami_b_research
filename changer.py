@@ -6,7 +6,6 @@ import re
 # ==========================================
 # 設定
 # ==========================================
-# GPU設定
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}\n")
 
