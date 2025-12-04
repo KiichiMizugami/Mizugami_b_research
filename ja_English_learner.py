@@ -14,7 +14,7 @@ os.environ["HF_HOME"] = os.path.expanduser("~/huggingface")
 os.environ["TRANSFORMERS_CACHE"] = os.path.expanduser("~/huggingface")
 
 # 出力ファイル
-output_file = "essays_Qwen3_IDN.txt"
+output_file = "essays_Qwen3_PKN.txt"
 
 # GPU設定
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -38,7 +38,7 @@ print(" Model loaded successfully.\n")
 # プロンプト（日本人英語学習者の作文生成）
 # ==========================================
 prompt = """You are a English learner.
- Your native language is Indonesian.
+ Your native language is Pakistan.
  Please write an English essay .
  The essay should answer the following topic:
  
