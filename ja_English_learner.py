@@ -14,7 +14,7 @@ os.environ["HF_HOME"] = os.path.expanduser("~/huggingface")
 os.environ["TRANSFORMERS_CACHE"] = os.path.expanduser("~/huggingface")
 
 # 出力ファイル
-output_file = "essays_Qwen3_PKN.txt"
+output_file = "essays_Qwen3_PHL.txt"
 
 # GPU設定
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -38,7 +38,7 @@ print(" Model loaded successfully.\n")
 # プロンプト（日本人英語学習者の作文生成）
 # ==========================================
 prompt = """You are a English learner.
- Your native language is Pakistan.
+ Your native language is Philippines.
  Please write an English essay .
  The essay should answer the following topic:
  
@@ -47,7 +47,6 @@ prompt = """You are a English learner.
  Write in simple English.
  please generate one essay of about 200-300 words.
  """
-
 # トークナイズ
 inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
 input_length = inputs.input_ids.shape[1]
