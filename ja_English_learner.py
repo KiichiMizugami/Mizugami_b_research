@@ -38,7 +38,7 @@ print(" Model loaded successfully.\n")
 # プロンプト（日本人英語学習者の作文生成）
 # ==========================================
 prompt = """You are a English learner.
- Your native language is Japanese.
+ Your native language is Chinese.
  Please write an English essay .
  The essay should answer the following topic:
  
